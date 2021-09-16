@@ -34,5 +34,8 @@ public class DictionaryTest {
     trans_contre.add("against3");
         assertThat(dict.getTranslation("contre"),equalTo(trans_contre));
     }
+    @Test public void testInverse(){
+        assertThat(dict.getInverse("against2"),equalTo("contre"));
+    }
     
 }

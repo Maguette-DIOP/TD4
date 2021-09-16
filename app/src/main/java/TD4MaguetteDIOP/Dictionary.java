@@ -58,5 +58,19 @@ public class Dictionary {
             this.getTranslation(french).add(english);
         }
     }
-   
+
+    public String getInverse(String name){
+        String rev = null;
+        for(String key : this.traduction.keySet()){
+            for(String k: this.getTranslation(key)){
+                if(k == name){
+                    rev = key;
+                }
+            }
+        }
+        return rev;
+    }
+
 }
+   
+
