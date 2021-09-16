@@ -20,6 +20,22 @@ public class Dictionary {
         return traduction.get(name);
     }
 
+    public void addtranslation_key(String french,List<String> english){
+        int count = 0;
+        for(String key : this.traduction.keySet()){
+            if(key == french){
+                count = 1;
+            }
+        }
+        if(count == 0){
+            this.traduction.put(french,english);
+        }
+        else{
+            System.out.println("le mots existe deja");
+        }
+        
+    }
+
     void addTranslation(String french, String english){
         int tr = 0;
         for(String key : this.traduction.keySet()){
