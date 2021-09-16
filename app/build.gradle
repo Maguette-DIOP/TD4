@@ -30,7 +30,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'tddnew.App'
+    mainClass = 'App'
 }
 
 jacoco {
