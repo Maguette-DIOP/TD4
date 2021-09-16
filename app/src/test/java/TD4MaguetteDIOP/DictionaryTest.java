@@ -7,8 +7,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class DictionaryTest {
-
     private Dictionary dict = new Dictionary("Exemple");
+    
     @Before public void initialize(){
         dict = new Dictionary("Exemple");
     }
